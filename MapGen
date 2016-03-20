@@ -1,0 +1,47 @@
+
+//theworldisquiethere
+
+public class MapKeeper {
+
+	Map[][] dungeon = new Map[5][5];
+
+	public MapKeeper() {
+
+		generate();
+
+	}
+
+	private void generate() {
+
+		int x = 2, y = 2, left = 5, split, holder;
+		int[][] draft = new int[6][2];
+
+		draft[0] = {2, 2}; //home
+
+		do {
+
+			if ((int)(Math.random() * 2) == 1) { //decision to split
+
+				holder = ((left >= 4)? 4 : left) //max splits
+
+				split = (int)(Math.random() * holder) + 1; //actual splits
+
+				for (int i = 0; i < split; i++) {
+
+					int xTemp = x, yTemp = y;
+
+					if (i == 0) { //up
+
+						if (y = y 
+
+					}
+
+				}				
+
+			}
+
+		} while (left > 0);
+
+	}
+
+}

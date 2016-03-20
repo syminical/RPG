@@ -1,0 +1,41 @@
+
+//theworldisquiethere
+
+import java.awt.*;
+
+public class Title extends Effect {
+
+	private String R = "R", P = "P", G = "G", popin = "Roleplaying Precision Game";
+	private int i = 0;
+	private Font big = new Font("Monospaced", Font.BOLD, 120);
+	private Font small = new Font("Monospaced", Font.PLAIN, 12);
+
+	public Title() {};
+
+	public Title(Effect container) {super(container);}
+
+	public boolean update() {
+
+		super.update();
+
+		i++;
+
+		return false;
+
+	}
+
+	public void draw(Graphics g) {
+
+		g.setFont(big);
+
+		g.drawString(R, 90, 90);
+		g.drawString(P, 140, 90);
+		g.drawString(G, 190, 90);
+
+		g.setFont(small);
+
+		if (i >= 15) g.drawString(popin, 95, 100);
+
+	}
+
+}
